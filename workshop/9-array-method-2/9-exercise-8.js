@@ -13,6 +13,19 @@
 // Otherwise returns false.
 function allLong(lst) {
   // lst is an array of strings
+  let newLst = lst.filter(
+    
+    (i) => {
+      return (i.length < 5)
+    }
+  )
+
+  newLst = newLst.every(
+    (item) => {
+      // return ('true')
+    }
+    )
+    return newLst
 }
 
 console.log('Q8 - case 1', allLong(['Scott', 'Bob', 'Ric', 'Jim']));

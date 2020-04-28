@@ -14,6 +14,12 @@
 
 function greet(lst) {
   // lst is an array of strings
+//   for(var i=0;i<lst.length;i++){
+//     lst[i]="Hello "+lst[i]; // <-- This is for loop method
+// }
+// return lst
+lst = lst.map(i => 'Hello ' + i);
+return lst
 }
 
 console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));

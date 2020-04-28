@@ -2,7 +2,16 @@
 // Write a function that takes an array and a value as arguments and
 // returns true if the value is in the array else it returns false.
 
-function itemIsPresent(array, item) {}
+function itemIsPresent(array, item) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === item) {
+      return true
+    }
+  }
+  return false
+}
+
+
 
 // Test case
 const myArray = [
@@ -13,8 +22,10 @@ const myArray = [
   'exist',
   'code',
   'program',
-  'funky',
+  'funky'
 ];
 
-console.log(myArray, 'funky'); // true
-console.log(myArray, 'elephant'); // false
+
+console.log(itemIsPresent(myArray, 'funky')); // true
+console.log(itemIsPresent(myArray, 'elephant')); // false
+

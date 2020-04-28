@@ -11,7 +11,7 @@
 // Write function here
 
 
- 
+
 // Call the function with [48, 95, 65, 48, 59, 78, 72, 65]
 
 // Try with other values as well

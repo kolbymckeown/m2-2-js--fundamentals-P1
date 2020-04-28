@@ -13,8 +13,13 @@
 // greater than 5
 function keepLong(lst) {
   // lst is an array of strings
+  lst = lst.filter(
+    function(i) {
+      return (i.length > 5)
+    }
+  )
+  return lst
 }
-
 console.log(
   'Q5 keepLong()',
   keepLong(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'])
