@@ -16,11 +16,9 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
 function calculateAverage(grades) {
-    // let calculateAverage = (array) => array.reduce((a, b) => a + b) / array.length;
-    // return calculateAverage
-
-
+    return (grades.reduce((a, b) => a + b, 0)) / grades.length; 
 }
 
 console.log(calculateAverage([76, 60, 83, 100, 78]));
+
 

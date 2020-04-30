@@ -13,6 +13,14 @@
 
 function map(lst, func) {
   // lst is an array and func is a function
+  
+  let arr = [];
+  
+  for (i = 0; i < lst.length; i++) {
+    let newValue = func(lst[i])
+    arr.push(newValue) 
+  }
+  return arr
 }
 // -------------------------------------------------------------------------
 function charCount(str) {

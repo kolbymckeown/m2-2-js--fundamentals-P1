@@ -14,5 +14,19 @@
 let armstrongNumbers = [];
 
 // write your loop here...
+for (let i = 0; i < 1000; i++) {
+    let digits = i.toString().split('');
+
+    let sumOfCubes = 0;
+    digits.forEach(function (digit) {
+        let digitCubes = digit ** digits.length;
+        sumOfCubes += digitCubes;
+    });
+
+    if (sumOfCubes === i) {
+        armstrongNumbers.push(i);
+    }
+}
 
 console.log(armstrongNumbers);
+
